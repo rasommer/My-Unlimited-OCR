@@ -17,10 +17,10 @@ _RUNTIME_PKGS = [
 ]
 
 print("Installing pinned runtime dependencies...")
-subprocess.run(
-    [sys.executable, "-m", "pip", "install", "--quiet", "--no-cache-dir"] + _RUNTIME_PKGS,
-    check=True,
-)
+# subprocess.run(
+#     [sys.executable, "-m", "pip", "install", "--quiet", "--no-cache-dir"] + _RUNTIME_PKGS,
+#     check=True,
+# )
 print("Runtime deps installed.")
 
 # ── Now safe to import ────────────────────────────────────────────────────────
